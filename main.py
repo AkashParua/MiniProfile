@@ -22,7 +22,7 @@ if page == "Home":
     st.image("Assets/Screenshot from 2023-10-11 22-23-40.png", width=300)
     st.header("Internships")
     st.subheader("Proficient Vision Solutions Pvt. Ltd. (May 2023 - July 2023), IIT Kharagpur")
-    st.write("I worked as a image processing and computer vision intern. I trained SOTA models such as YOLO-NAS and YOLO-V8 on custom data.\nI deployed the models on a Jetson Nano and a Raspberry Pi 4.\nI also used various deraing and dehazing methods to improve the quality of the video stream.")
+    st.write("I worked as a image processing and computer vision intern. I trained SOTA(State of The Art) object detection models such as YOLO-NAS and YOLO-V8 on custom data.\nI deployed the models on a Jetson Nano and a Raspberry Pi 4.\nI also used various deraining and dehazing methods to improve the quality of the video stream.")
     st.image("Assets/Screenshot from 2023-10-11 22-33-38.png", width=300)
     st.header("Skills")
     col1, col2, col3 = st.columns(3)
