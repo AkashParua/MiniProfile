@@ -1,26 +1,6 @@
 import streamlit as st
 from googleapiclient.discovery import build
 import smtplib
-#laod env file
-from dotenv import load_dotenv
-load_dotenv()
-import os
-# Your Gmail account
-EMAIL = os.getenv("EMAIL")
-PASSWORD = os.getenv("PASSWORD")
-
-def send_email(message):
-    with smtplib.SMTP("smtp.gmail.com") as smtp:
-        smtp.ehlo()
-        smtp.starttls()
-        smtp.ehlo()
-
-        smtp.login(EMAIL, PASSWORD)
-
-        subject = "New message from your portfolio"
-        body = message
-        msg = f"Subject: {subject}\n\n{body}"
-        smtp.sendmail(EMAIL, EMAIL, msg)
 
 # Page configuration
 st.set_page_config(
