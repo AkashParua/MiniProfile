@@ -16,7 +16,7 @@ if page == "Home":
     st.write("Here you can find information about my projects and more.")
     st.image("Assets/Me.jpeg", width=300)
     st.header("About Me")
-    st.write("I'm a software engineer with a passion for machine learning and data science. \nI'm currently pursuing a Master's degree in Computer Science at Indian Institute of Information Technology Kalyani.\n")
+    st.write("I'm a software engineer with a passion for machine learning and data science. \nI'm currently pursuing a Bachelor's degree in Computer Science at Indian Institute of Information Technology Kalyani (Graduation 2024).\n")
     st.header("Education")
     st.write("B.Tech in Computer Science and Engineering from Indian Institute of Information Technology, West Bengal, India.I have a CGPA of 8.9/10.")
     st.image("Assets/Screenshot from 2023-10-11 22-23-40.png", width=300)
