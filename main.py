@@ -162,5 +162,5 @@ if page == "Page 2":
 # Footer
 st.markdown("---")
 st.write("Connect with me on [LinkedIn](https://www.linkedin.com/in/akash-parua-76b2531b7/)")
-st.write("Connect with me via [gmail](akashparua999@gmail.com)")
+st.write("Connect with me via : akashparua999@gmail.com")
 st.write("Feel free to reach out to me via email or LinkedIn.")
