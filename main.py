@@ -10,7 +10,7 @@ st.set_page_config(
 )
 
 st.sidebar.title("Navigation")
-page = st.sidebar.radio("Go to", ["Home", "Page 1", "Page 2"])
+page = st.sidebar.radio("Go to", ["Home", "Page 1", "Page 2" , "Page 3"])
 if page == "Home":
     st.title("Welcome to my portfolio!")
     st.write("Here you can find information about my projects and more.")
@@ -156,7 +156,50 @@ if page == "Page 2":
     # Display external links as hyperlinks
     st.markdown("[GitHub Repository](https://github.com/AkashParua/TutorMe2.git)")
 
+if page == "Page 3":
+    st.title("Cross-Coded-Translation")
+    
+    st.markdown("## Introduction")
+    st.markdown("The problem statement given was a cross-coding translation task.")
+    
+    st.markdown("## What is cross-coding translation / text generation?")
+    st.markdown("### Cross coding translation that contain more than one script / language example...")
+    
+    st.markdown("Statement: I had about a 30 minute demo just using this new headset")
+    st.markdown("Output required: मझे सिर्फ ३० **minute** का **demo** मिला था इस नये **headset** का इस्तेमाल करने के\nलिए")
 
+    st.markdown("### Complete cross-coding")
+    st.markdown("There is another kind of cross coding -")
+    st.markdown("Statement: I had about a 30 minute demo just using this new headset")
+    st.markdown("Output: Mujhe sirf 30 minut ka demo mila tha us naye headset ka istemal karne ke liye")
+
+    st.markdown("## Explorer")
+    st.markdown("`requirements.txt` python dependencies")
+    st.markdown("`english_to_hinglish_tokenizer` directory to the trained tokenizer")
+    st.markdown("`my-t5-hinglish-translator` directory to the translator")
+    st.markdown("`train_full_crosscoded.ipynb` script to train fully cross-coded english to hinglish translator")
+    st.markdown("`full_cross_coding_translation.ipynb` script to translate english to fully cross-coded hinglish")
+    st.markdown("`train-cross-coding.ipynb` kaggle sheet")
+
+    st.markdown("## Usage")
+    st.code("git clone https://github.com/AkashParua/Cross-Coded-Translation.git")
+    st.code("cd CrossCodedText")
+    st.code("pip install -r requirements.txt")
+
+    st.markdown("### To train locally -")
+    st.markdown("Use `train_full_crosscoded.ipynb` to train the algorithm for fully cross-coding translation model (tokenizer and translator)")
+
+    st.markdown("### Alternatively")
+    st.markdown("Download [translator](https://drive.google.com/file/d/1ekwzOLTV20sg2o_VLaCUBZAzxCuUzo-u/view?usp=sharing)")
+    st.markdown("Download [tokenizer](https://drive.google.com/file/d/1dpJNWn2nRMpTa2M5cqTWiCdLF3hnpyvc/view?usp=sharing)")
+    st.markdown("Extract the files")
+    st.markdown("Make sure the file structure is -")
+    st.image("Assets/dir.jpg", width=320)
+
+    st.markdown("## Kaggle Sheet")
+    st.markdown("Kaggle [Kaggle](https://www.kaggle.com/code/akashparua/train-cross-coding)")
+
+   
 
 # Define your projects
 # Footer
