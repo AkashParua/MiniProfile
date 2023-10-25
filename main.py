@@ -10,7 +10,7 @@ st.set_page_config(
 )
 
 st.sidebar.title("Navigation")
-page = st.sidebar.radio("Go to", ["Home", "Page 1", "Page 2" , "Page 3"])
+page = st.sidebar.radio("Go to", ["Home", "Page 1", "Page 2" , "Page 3" , "Page 4"])
 if page == "Home":
     st.title("Welcome to my portfolio!")
     st.write("Here you can find information about my projects and more.")
@@ -87,7 +87,7 @@ if page == "Page 1":
 
 
 
-if page == "Page 2":
+if page == "Page 4":
     # Header
     st.title("TutorMe2 - Project Overview")
 
@@ -199,7 +199,68 @@ if page == "Page 3":
     st.markdown("## Kaggle Sheet")
     st.markdown("Kaggle [Kaggle](https://www.kaggle.com/code/akashparua/train-cross-coding)")
 
-   
+if page == "Page 2":
+    # Title
+    st.title("Gesture Detection using LSTM 🤖")
+
+    # Introduction - LSTM
+    st.header("LSTM 🧠")
+    st.write(
+        "LSTM (Long Short-Term Memory) is a type of recurrent neural network (RNN) architecture "
+        "that is designed to handle the vanishing gradient problem in traditional RNNs. LSTMs "
+        "are particularly useful for modeling sequential data, such as time series or natural "
+        "language, where long-term dependencies between inputs are important. The architecture of "
+        "an LSTM includes a memory cell that can store information over time, as well as input, "
+        "output, and forget gates that control the flow of information into and out of the cell. "
+        "This allows LSTMs to selectively remember or forget information from previous inputs, making "
+        "them well-suited for tasks such as speech recognition, language translation, and gesture detection."
+    )
+
+    # How to use LSTM for gesture detection?
+    st.subheader("How to use LSTM for gesture detection?")
+    st.write(
+        "Gesture Detection using LSTMs can be done using two parts:\n"
+        "1. Landmark Detection\n"
+        "2. LSTM\n\n"
+        "Approach:\n"
+        "First, we use the Mediapipe Library to extract landmark features of each landmark from input video frames. "
+        "These include hand and pose landmark features. There are a total of 258 of these landmarks, 68 for each hand and "
+        "132 pose landmarks. Then we take 30 successive frames as our data to be trained on."
+    )
+
+    # File explorer
+    st.subheader("File Explorer")
+
+    # Collection of Data
+    st.write("Collection of Data")
+    st.write("`collect.ipynb` to collect multiple 30 frames long videos to be used to train the LSTM")
+    st.write("`Data` Directory contains multiple subdirectories with the names of various actions. "
+            "Inside each subdirectory are .npy files of (30, 258) dimension.")
+    st.write("Example: the 'forward' directory has 30 .npy files. Each file has 30 frames of 258 Mediapipe landmarks (hence size (30, 258)).")
+    st.write("The data has been manually collected.")
+
+    # Processing Data
+    st.write("Processing Data")
+    st.write("`process.ipynb` Takes the raw .npy data and performs StratifiedShuffleSplit on the entire data to create test and train data such that both test and train have equal representation of all classes.")
+
+    # Keras model
+    st.write("Keras model")
+    st.write("`model_creation_training.ipynb` Creates LSTM model and trains it")
+    st.write("The architecture is given below")
+    st.image("model.h5.svg", use_container_width=True)
+
+    # Final implementation
+    st.subheader("Final Implementation")
+    st.write("`final_detection.ipynb` implements the model.")
+
+    # Demonstration
+    st.subheader("Demonstration")
+    st.video("https://youtu.be/kc1Ywcgmrwk?si=CJ8mpgfKXV1gOQVu")
+
+# Run the Streamlit app
+if __name__ == "__main__":
+    st.run()
+ 
 
 # Define your projects
 # Footer
