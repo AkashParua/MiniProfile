@@ -247,7 +247,7 @@ if page == "Page 2":
     st.write("Keras model")
     st.write("`model_creation_training.ipynb` Creates LSTM model and trains it")
     st.write("The architecture is given below")
-    st.image("model.h5.svg", format="svg")
+    st.image("model.h5.png")
 
     # Final implementation
     st.subheader("Final Implementation")
