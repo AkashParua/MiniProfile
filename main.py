@@ -257,11 +257,6 @@ if page == "Page 2":
     st.subheader("Demonstration")
     st.video("https://youtu.be/kc1Ywcgmrwk?si=CJ8mpgfKXV1gOQVu")
 
-# Run the Streamlit app
-if __name__ == "__main__":
-    st.run()
- 
-
 # Define your projects
 # Footer
 st.markdown("---")
