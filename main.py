@@ -78,7 +78,7 @@ if page == "Page 1":
     st.markdown("3. Run the `hearing.py` script.")
     st.markdown("4. Run the `main.py` script.")
 
-    st.video("https://user-images.githubusercontent.com/70876392/269930562-655084a3-7521-4d71-b70c-9684385a5c94.mp4")
+    st.video("https://youtu.be/Bhnqg9uNdWI?si=tpTt14XdEi4JFGCq")
     # Define function to display link
     def display_link(link_url):
         st.markdown(f'[GITHUB REPO]({link_url})')
