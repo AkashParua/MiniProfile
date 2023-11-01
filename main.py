@@ -30,7 +30,7 @@ if page == "Home":
         st.subheader("Programming Languages")
         st.write("Python")
         st.write("C++")
-        st.write("Goland")
+        st.write("Go")
         st.write("Java")
     with col2:
         st.subheader("Machine Learning")
